@@ -1,0 +1,19 @@
+      __________________
+    .-'  \ _.-''-._ /  '-.
+  .-/\   .'.      .'.   /\-.
+ _'/  \.'   '.  .'   './  \'_
+:======:======::======:======:
+ '. '.  \     ''     /  .' .'
+   '. .  \   :  :   /  . .'
+     '.'  \  '  '  /  '.'
+       ':  \:    :/  :'
+         '. \    / .'
+           '.\  /.'
+             '\/'
+
+Diamond: Made using Carbon
+
+=!= Diamond will be running in the background. =!=
+=!= To kill it, use either `killall carbon` or =!=
+=!= `kill $(cat carbon.pid)`                   =!=
+

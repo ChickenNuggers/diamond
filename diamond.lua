@@ -1,7 +1,7 @@
-local debug = true
+local dbug = true
 
 local function dprint(...)
-	if debug then
+	if dbug then
 		print(...)
 	end
 end

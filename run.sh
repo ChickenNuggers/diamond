@@ -3,8 +3,12 @@
 # Automatically reload when a file's md5sum is changed after 5 seconds of loop
 
 lastChangeSums=($(md5sum diamond.conf | awk '{ print $1 }') $(md5sum diamond.lua | awk '{ print $1 }'))
+
+cat intro.txt
+
 carbon -config="diamond.conf" &
 pid=$!
+echo $pid > carbon.pid
 
 while true; do
 	sleep 5
@@ -20,6 +24,7 @@ while true; do
 		lastChangeSums=($(md5sum diamond.conf | awk '{ print $1 }') $(md5sum diamond.lua | awk '{ print $1 }'))
 		carbon -config="diamond.conf" &
 		pid=$!
+		echo $pid > carbon.pid
 		echo "Restarted Diamond"
 	fi
 done
